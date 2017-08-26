@@ -1,4 +1,6 @@
+import bgJpeg from './bg.jpg'
 import React, {Component} from 'react'
+
 
 class BackdropBlur extends Component {
 
@@ -71,7 +73,7 @@ class BackdropBlur extends Component {
     return {
       width : '100vw',
       height : '100vh',
-      backgroundImage: 'url(bg.jpg)',
+      backgroundImage: `url(${bgJpeg})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       filter: `blur(${this.state.hasEngagedBlur ? 20 : 0}px)`,
